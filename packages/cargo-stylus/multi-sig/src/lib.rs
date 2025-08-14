@@ -39,7 +39,7 @@ sol! {
 // `MultiSig` will be the entrypoint.
 sol_storage! {
     #[entrypoint]
-    pub struct MultiSig {
+    pub struct MultiSig{
         address[] owners; // The addresses of the owners
         mapping(address => bool) is_owner; // mapping from owner => bool
         uint256 num_confirmations_required; // The number of confirmations required to execute a transaction
